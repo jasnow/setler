@@ -1,9 +1,9 @@
 language: ruby
 rvm:
   - 2.3.8
-  - 2.4.7
-  - 2.5.7
-  - 2.6.5
+  - 2.4.10
+  - 2.5.8
+  - 2.6.6
 before_install: "gem install bundler:1.17.2"
 cache: bundler
 script: "bundle exec rake test"
@@ -18,5 +18,5 @@ matrix:
   exclude:
     - rvm: 2.3.8
       gemfile: gemfiles/rails_6_edge.gemfile
-    - rvm: 2.4.7
+    - rvm: 2.4.10
       gemfile: gemfiles/rails_6_edge.gemfile
